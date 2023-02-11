@@ -51,6 +51,7 @@ public class DemoApplication {
 				person.get().setAge((Integer) mp.get("age"));
 			}
 	        //so when we same the same object it will automatically get saved...
+			//when we are saving it will look for the id and it will update i think
 	    	return personRepo.save(person.get());
 		}
 	    return "Person does not exist";
